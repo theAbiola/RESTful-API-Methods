@@ -4,7 +4,7 @@ import bodyParser from "body-parser";
 import env from "dotenv";
 
 const app = express();
-const port = 3000;
+const port = process.env.APPLICATION_PORT;
 env.config();
 const API_URL = process.env.SECRETS_API_URL;
 
