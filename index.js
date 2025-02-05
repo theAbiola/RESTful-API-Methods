@@ -10,14 +10,14 @@ const API_URL = process.env.SECRETS_API_URL;
 
 // For reference, we can use the axios documentation via the link below.
 // https://axios-http.com/docs/post_example
-// We must use the Secrets API documentation to figure out what each route expects and how to work with it.
+// We must use the Secrets API documentation to figure out what each route expects and how to work with each route.
 // https://secrets-api.appbrewery.com/
 
-// Our own bearer token generated from the secrets API.
-const yourBearerToken = process.env.SECRETS_API_BEARER_TOKEN;
+// Our bearer token generated from the secrets API.
+const ourBearerToken = process.env.SECRETS_API_BEARER_TOKEN;
 
 const config = {
-  headers: { Authorization: `Bearer ${yourBearerToken}` },
+  headers: { Authorization: `Bearer ${ourBearerToken}` },
 };
 
 app.use(bodyParser.urlencoded({ extended: true }));
