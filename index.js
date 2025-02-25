@@ -4,8 +4,8 @@ import bodyParser from "body-parser";
 import env from "dotenv";
 
 const app = express();
-const port = process.env.APPLICATION_PORT;
 env.config();
+const port = process.env.APPLICATION_PORT;
 const API_URL = process.env.SECRETS_API_URL;
 
 // For reference, we can use the axios documentation via the link below.
