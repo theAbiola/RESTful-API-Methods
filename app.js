@@ -7,7 +7,6 @@ const app = express();
 env.config();
 const port = process.env.APPLICATION_PORT;
 
-
 // For reference, we can use the axios documentation via the link below.
 // https://axios-http.com/docs/post_example
 // We must use the Secrets API documentation to figure out what each route expects and how to work with each route.
