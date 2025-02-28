@@ -1,7 +1,7 @@
 import express from "express";
 import bodyParser from "body-parser";
 import env from "dotenv";
-import apiRoutes from "./routers/secretApiRoutes.js";
+import apiRoutes from "./routes/secretApiRoutes.js";
 
 const app = express();
 env.config();
